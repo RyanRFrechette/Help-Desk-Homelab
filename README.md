@@ -134,6 +134,79 @@ Selected the 60 GB unallocated virtual disk as the Windows Server installation t
 
 Confirmed Windows Server installed successfully and reached the login screen for the `RYANLAB-DC01` virtual machine.
 
+
+### 14. Windows Server Manager Dashboard
+
+![Windows Server Manager dashboard](screenshots/server-configuration/14-windows-server-manager-dashboard.png)
+
+Confirmed Windows Server installed successfully and Server Manager launched.
+
+### 15. Server Renamed to RYANLAB-DC01
+
+![Server renamed confirmed](screenshots/server-configuration/15-server-renamed-confirmed.png)
+
+Renamed the Windows Server VM to `RYANLAB-DC01`, creating a clean server identity for the lab.
+
+### 16. Add Roles and Features Wizard
+
+![Add roles and features wizard](screenshots/active-directory/16-add-roles-and-features-wizard.png)
+
+Opened the Add Roles and Features Wizard to begin installing Active Directory services.
+
+### 17. Active Directory Domain Services Selected
+
+![Active Directory Domain Services selected](screenshots/active-directory/17-select-active-directory-domain-services.png)
+
+Selected Active Directory Domain Services as the server role for the lab domain controller.
+
+### 18. Confirm AD DS Installation
+
+![Confirm AD DS installation](screenshots/active-directory/18-confirm-ad-ds-installation.png)
+
+Reviewed and confirmed the Active Directory Domain Services installation selections.
+
+### 19. AD DS Installed — Promotion Required
+
+![AD DS installation complete](screenshots/active-directory/19-ad-ds-installation-complete-promotion-required.png)
+
+Completed the AD DS role installation and confirmed the server still needed to be promoted to a domain controller.
+
+### 20. Domain Controller Deployment Configuration
+
+![Domain controller deployment configuration](screenshots/active-directory/20-domain-controller-deployment-configuration.png)
+
+Started the domain controller promotion process and configured a new forest for the lab.
+
+### 21. DNS Options Warning
+
+![DNS options warning](screenshots/active-directory/21-dns-options-warning.png)
+
+Reviewed the normal DNS delegation warning that appears in a small standalone lab environment.
+
+### 22. Review Domain Controller Options
+
+![Review domain controller options](screenshots/active-directory/22-review-domain-controller-options.png)
+
+Reviewed the new forest configuration for `ryanlab.local` before promotion.
+
+### 23. Prerequisites Check Passed
+
+![Prerequisites check passed](screenshots/active-directory/23-prerequisites-check-passed.png)
+
+Confirmed prerequisite checks passed before promoting the server to a domain controller.
+
+### 24. Server Manager After Domain Reboot
+
+![Server Manager after domain reboot](screenshots/active-directory/24-server-manager-after-domain-reboot.png)
+
+Confirmed the server rebooted successfully after domain controller promotion.
+
+### 25. Domain Confirmed on Local Server
+
+![Domain confirmed on Local Server](screenshots/active-directory/25-domain-joined-local-server-confirmed.png)
+
+Confirmed the server is now part of the `ryanlab.local` domain, proving the Active Directory lab domain was created successfully.
+
 ## Screenshot Workflow
 
 Screenshots are taken with ShareX and imported with a PowerShell script at the end of each session.
@@ -171,6 +244,7 @@ This project is intentionally beginner-friendly and honest. It does not claim se
 - Install Active Directory Domain Services
 - Create test users and groups
 - Create ticket-style documentation for each support scenario
+
 
 
 
