@@ -95,6 +95,20 @@ Created the `RYANLAB-DC01` virtual machine profile and attached the Windows Serv
 
 Assigned memory, CPU, and virtual disk resources for the Windows Server VM.
 
+## Screenshot Workflow
+
+Screenshots are taken with ShareX and imported with a PowerShell script at the end of each session.
+
+```powershell
+# Copy screenshots from the last 2 hours into screenshots/inbox
+.\scripts\import-latest-screenshots.ps1
+
+# Or extend the window for a longer session
+.\scripts\import-latest-screenshots.ps1 -Hours 4
+```
+
+After importing: review inbox, rename files to match the numbered sequence, move them to `screenshots/setup` or `screenshots/vm-setup`, then update the captions in this README. See [screenshot-manifest.md](screenshot-manifest.md) for the full workflow.
+
 ## Planned Help Desk Scenarios
 
 This project will eventually include ticket writeups for:
