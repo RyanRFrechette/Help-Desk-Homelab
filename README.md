@@ -1,6 +1,6 @@
 # Help Desk Homelab
 
-A practical Windows help desk portfolio project documenting virtual machine setup, Windows Server preparation, Windows client setup, and ticket-style troubleshooting workflows.
+A practical Windows help desk portfolio project documenting virtual machine setup, Windows Server preparation, Active Directory Domain Services configuration, and ticket-style troubleshooting workflows.
 
 This project is designed for remote help desk, IT support, and technical support roles. It shows that I can follow a structured lab process, document my work clearly, organize screenshots, and explain beginner Windows support tasks in a professional way.
 
@@ -24,23 +24,24 @@ Planned lab setup:
 - Virtualization: Oracle VirtualBox
 - Server VM: `RYANLAB-DC01`
 - Server OS: Windows Server 2022 Evaluation
+- Domain: `ryanlab.local`
 - Client VM: Windows 11
-- Future domain: `ryanlab.local`
 
 ## Tools Used
 
 - Oracle VirtualBox
 - Windows Server 2022 Evaluation ISO
 - Windows 11 ISO
+- Active Directory Domain Services
+- DNS Server role
 - PowerShell
 - Git
 - GitHub
 - Markdown
-- ShareX screenshots
 
 ## Current Status
 
-Phase 0 and early VM setup are in progress.
+Windows Server and the first Active Directory domain controller are configured.
 
 Completed so far:
 
@@ -48,8 +49,13 @@ Completed so far:
 - Installed and verified VirtualBox
 - Downloaded Windows Server ISO
 - Downloaded Windows 11 ISO
-- Started creating the Windows Server VM
-- Began organizing screenshots for GitHub documentation
+- Created the Windows Server VM
+- Installed Windows Server 2022
+- Renamed the server to `RYANLAB-DC01`
+- Installed Active Directory Domain Services
+- Promoted the server to a domain controller
+- Created the lab domain `ryanlab.local`
+- Documented each major setup step with screenshots
 
 ## Screenshots
 
@@ -95,14 +101,11 @@ Created the `RYANLAB-DC01` virtual machine profile and attached the Windows Serv
 
 Assigned memory, CPU, and virtual disk resources for the Windows Server VM.
 
-
 ### 8. Windows Server VM Created
 
 ![Server VM created](screenshots/vm-setup/08-server-vm-created.png)
 
 Confirmed the `RYANLAB-DC01` Windows Server virtual machine was created in VirtualBox with the expected memory, CPU, disk, and ISO settings.
-
-
 
 ### 9. Windows Server Setup Start
 
@@ -134,7 +137,6 @@ Selected the 60 GB unallocated virtual disk as the Windows Server installation t
 
 Confirmed Windows Server installed successfully and reached the login screen for the `RYANLAB-DC01` virtual machine.
 
-
 ### 14. Windows Server Manager Dashboard
 
 ![Windows Server Manager dashboard](screenshots/server-configuration/14-windows-server-manager-dashboard.png)
@@ -165,7 +167,7 @@ Selected Active Directory Domain Services as the server role for the lab domain 
 
 Reviewed and confirmed the Active Directory Domain Services installation selections.
 
-### 19. AD DS Installed — Promotion Required
+### 19. AD DS Installed â€” Promotion Required
 
 ![AD DS installation complete](screenshots/active-directory/19-ad-ds-installation-complete-promotion-required.png)
 
@@ -207,20 +209,6 @@ Confirmed the server rebooted successfully after domain controller promotion.
 
 Confirmed the server is now part of the `ryanlab.local` domain, proving the Active Directory lab domain was created successfully.
 
-## Screenshot Workflow
-
-Screenshots are taken with ShareX and imported with a PowerShell script at the end of each session.
-
-```powershell
-# Copy screenshots from the last 2 hours into screenshots/inbox
-.\scripts\import-latest-screenshots.ps1
-
-# Or extend the window for a longer session
-.\scripts\import-latest-screenshots.ps1 -Hours 4
-```
-
-After importing: review inbox, rename files to match the numbered sequence, move them to `screenshots/setup` or `screenshots/vm-setup`, then update the captions in this README. See [screenshot-manifest.md](screenshot-manifest.md) for the full workflow.
-
 ## Planned Help Desk Scenarios
 
 This project will eventually include ticket writeups for:
@@ -238,13 +226,8 @@ This project is intentionally beginner-friendly and honest. It does not claim se
 
 ## Next Steps
 
-- Finish creating the Windows Server VM
-- Install Windows Server
-- Rename the server to `RYANLAB-DC01`
-- Install Active Directory Domain Services
+- Create Active Directory organizational units
 - Create test users and groups
-- Create ticket-style documentation for each support scenario
-
-
-
-
+- Create a Windows 11 client VM
+- Join the Windows 11 client to `ryanlab.local`
+- Document help desk ticket scenarios
