@@ -95,6 +95,13 @@ Created the `RYANLAB-DC01` virtual machine profile and attached the Windows Serv
 
 Assigned memory, CPU, and virtual disk resources for the Windows Server VM.
 
+
+### 8. Windows Server VM Created
+
+![Server VM created](screenshots/vm-setup/08-server-vm-created.png)
+
+Confirmed the `RYANLAB-DC01` Windows Server virtual machine was created in VirtualBox with the expected memory, CPU, disk, and ISO settings.
+
 ## Screenshot Workflow
 
 Screenshots are taken with ShareX and imported with a PowerShell script at the end of each session.
@@ -132,3 +139,4 @@ This project is intentionally beginner-friendly and honest. It does not claim se
 - Install Active Directory Domain Services
 - Create test users and groups
 - Create ticket-style documentation for each support scenario
+
