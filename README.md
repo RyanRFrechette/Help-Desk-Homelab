@@ -103,6 +103,31 @@ Assigned memory, CPU, and virtual disk resources for the Windows Server VM.
 Confirmed the `RYANLAB-DC01` Windows Server virtual machine was created in VirtualBox with the expected memory, CPU, disk, and ISO settings.
 
 
+
+### 9. Windows Server Setup Start
+
+![Windows Server setup start](screenshots/vm-setup/09-windows-server-setup-start.png)
+
+Started the Windows Server installation inside the `RYANLAB-DC01` VirtualBox VM.
+
+### 10. Windows Server Edition Selection
+
+![Windows Server edition selection](screenshots/vm-setup/10-windows-server-edition-selection.png)
+
+Selected Windows Server 2022 Standard Evaluation with Desktop Experience for a GUI-based help desk lab.
+
+### 11. Windows Server Custom Install Type
+
+![Windows Server custom install type](screenshots/vm-setup/11-windows-server-install-type.png)
+
+Chose a custom installation for a clean Windows Server install on the virtual machine.
+
+### 12. Windows Server Drive Selection
+
+![Windows Server drive selection](screenshots/vm-setup/12-windows-server-drive-selection.png)
+
+Selected the 60 GB unallocated virtual disk as the Windows Server installation target.
+
 ### 13. Windows Server Login Screen
 
 ![Windows Server login screen](screenshots/vm-setup/13-windows-server-login-screen.png)
@@ -146,5 +171,6 @@ This project is intentionally beginner-friendly and honest. It does not claim se
 - Install Active Directory Domain Services
 - Create test users and groups
 - Create ticket-style documentation for each support scenario
+
 
 
