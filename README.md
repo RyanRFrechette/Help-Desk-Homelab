@@ -55,6 +55,8 @@ Completed so far:
 - Installed Active Directory Domain Services
 - Promoted the server to a domain controller
 - Created the lab domain `ryanlab.local`
+- Created a basic Active Directory OU structure for users, groups, disabled accounts, and workstations
+- Created initial security groups for role-based access examples
 - Documented each major setup step with screenshots
 
 ## Screenshots
@@ -209,6 +211,24 @@ Confirmed the server rebooted successfully after domain controller promotion.
 
 Confirmed the server is now part of the `ryanlab.local` domain, proving the Active Directory lab domain was created successfully.
 
+### 26. Active Directory Users and Computers Open
+
+![Active Directory Users and Computers open](screenshots/active-directory/26-active-directory-users-and-computers-open.png)
+
+Opened Active Directory Users and Computers on the `RYANLAB-DC01` domain controller and confirmed the `ryanlab.local` domain is available for user, group, and workstation administration.
+
+### 27. Active Directory OU Structure Created
+
+![Active Directory OU structure created](screenshots/active-directory/27-active-directory-ou-structure-created.png)
+
+Created a clean organizational unit structure under `RyanLab` for `Users`, `Groups`, `Disabled Users`, and `Workstations`. This mirrors a basic business environment and keeps accounts organized for help desk support workflows.
+
+### 28. Active Directory Security Groups Created
+
+![Active Directory security groups created](screenshots/active-directory/28-active-directory-security-groups-created.png)
+
+Created security groups for common access roles: `IT-Support`, `HR-Shared`, `Sales-Shared`, and `Remote-Users`. These groups will be used later to demonstrate access control, shared folder permissions, and group membership troubleshooting.
+
 ## Planned Help Desk Scenarios
 
 This project will eventually include ticket writeups for:
@@ -226,8 +246,7 @@ This project is intentionally beginner-friendly and honest. It does not claim se
 
 ## Next Steps
 
-- Create Active Directory organizational units
-- Create test users and groups
+- Create test users and assign group memberships
 - Create a Windows 11 client VM
 - Join the Windows 11 client to `ryanlab.local`
 - Document help desk ticket scenarios
