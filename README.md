@@ -63,6 +63,7 @@ Completed so far:
 - Assigned users to security groups to demonstrate role-based access management
 - Created the Windows 11 client VM `RYANLAB-WIN11-01`
 - Began the Windows 11 client installation process
+- Confirmed the Windows 11 client reached the desktop successfully
 - Documented a real Windows 11 VM boot troubleshooting issue as a support-style ticket
 - Documented each major setup step with screenshots
 
@@ -266,6 +267,12 @@ Reviewed the Windows 11 client VM network adapter settings before installation. 
 
 Started the Windows 11 installation process for the client workstation VM. This is the foundation for the endpoint support portion of the lab, where the workstation will later be renamed, configured, and joined to the domain.
 
+### 34. Windows 11 Client Desktop Ready
+
+![Windows 11 client desktop ready](screenshots/vm-setup/34-windows-client-desktop-ready.png)
+
+Confirmed the Windows 11 client workstation successfully reached the desktop after installation. This proves the endpoint build is ready for the next help desk tasks: workstation naming, network/DNS configuration, domain join, domain user login testing, and support-ticket demonstrations.
+
 ## Troubleshooting Example
 
 During the Windows 11 client VM build, the VM initially failed to boot from the installation media and displayed a black screen / boot failure behavior. I documented the issue as a support-style ticket to show realistic troubleshooting instead of hiding the setup problem.
@@ -291,7 +298,6 @@ This project is intentionally beginner-friendly and honest. It does not claim se
 
 ## Next Steps
 
-- Finish Windows 11 client installation
 - Rename the Windows 11 client VM/workstation
 - Configure client networking and DNS for the lab domain
 - Join the Windows 11 client to `ryanlab.local`
