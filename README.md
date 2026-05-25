@@ -2,7 +2,7 @@
 
 A practical Windows help desk portfolio project documenting virtual machine setup, Windows Server preparation, Active Directory Domain Services configuration, and ticket-style troubleshooting workflows.
 
-This project is designed for remote help desk, IT support, and technical support roles. It shows that I can follow a structured lab process, document my work clearly, organize screenshots, and explain beginner Windows support tasks in a professional way.
+This project is designed for remote help desk, IT support, and technical support roles. It shows that I can follow a structured lab process, document my work clearly, organize screenshots, troubleshoot setup issues, and explain beginner Windows support tasks in a professional way.
 
 ## Why This Project Matters
 
@@ -12,9 +12,10 @@ Hiring managers do not need a giant advanced cloud project to evaluate entry-lev
 - Set up a basic technical lab
 - Use PowerShell and Windows tools
 - Prepare Windows Server and Windows client environments
+- Work with Active Directory users, groups, and access roles
 - Capture clean troubleshooting evidence
 - Write clear ticket-style documentation
-- Explain what I did and why it matters
+- Explain what I did, what went wrong, how I fixed it, and why it matters
 
 ## Lab Environment
 
@@ -25,7 +26,8 @@ Planned lab setup:
 - Server VM: `RYANLAB-DC01`
 - Server OS: Windows Server 2022 Evaluation
 - Domain: `ryanlab.local`
-- Client VM: Windows 11
+- Client VM: `RYANLAB-WIN11-01`
+- Client OS: Windows 11
 
 ## Tools Used
 
@@ -41,7 +43,7 @@ Planned lab setup:
 
 ## Current Status
 
-Windows Server and the first Active Directory domain controller are configured.
+Windows Server and the first Active Directory domain controller are configured. The lab domain, OU structure, test users, security groups, and initial Windows 11 client VM are now documented.
 
 Completed so far:
 
@@ -57,6 +59,11 @@ Completed so far:
 - Created the lab domain `ryanlab.local`
 - Created a basic Active Directory OU structure for users, groups, disabled accounts, and workstations
 - Created initial security groups for role-based access examples
+- Created test users for HR, Sales, Operations, and IT support scenarios
+- Assigned users to security groups to demonstrate role-based access management
+- Created the Windows 11 client VM `RYANLAB-WIN11-01`
+- Began the Windows 11 client installation process
+- Documented a real Windows 11 VM boot troubleshooting issue as a support-style ticket
 - Documented each major setup step with screenshots
 
 ## Screenshots
@@ -229,6 +236,44 @@ Created a clean organizational unit structure under `RyanLab` for `Users`, `Grou
 
 Created security groups for common access roles: `IT-Support`, `HR-Shared`, `Sales-Shared`, and `Remote-Users`. These groups will be used later to demonstrate access control, shared folder permissions, and group membership troubleshooting.
 
+### 29. Active Directory Test Users Created
+
+![Active Directory test users created](screenshots/active-directory/29-active-directory-test-users-created.png)
+
+Created realistic test user accounts for different departments: HR, Sales, Operations, and IT support. These accounts will be used to demonstrate common help desk workflows such as onboarding, password resets, account access changes, and domain login testing.
+
+### 30. Active Directory Group Membership Assigned
+
+![Active Directory group membership assigned](screenshots/active-directory/30-active-directory-group-membership-assigned.png)
+
+Assigned users to role-based security groups. This shows basic identity and access management: HR users receive HR access, Sales users receive Sales access, remote users are grouped for remote-access examples, and the help desk test account is assigned to the IT support group.
+
+### 31. Windows 11 Client VM Created
+
+![Windows 11 client VM created](screenshots/vm-setup/31-windows-client-vm-created.png)
+
+Created the Windows 11 client virtual machine `RYANLAB-WIN11-01`. This client will represent a normal employee workstation that can later be joined to the `ryanlab.local` domain for login, access, and troubleshooting demonstrations.
+
+### 32. Windows 11 Client VM Network Settings
+
+![Windows 11 client VM network settings](screenshots/vm-setup/32-windows-client-vm-network-settings.png)
+
+Reviewed the Windows 11 client VM network adapter settings before installation. Capturing network configuration is important because domain join and Active Directory login troubleshooting often depend on correct network and DNS setup.
+
+### 33. Windows 11 Client Installation Started
+
+![Windows 11 client installation started](screenshots/vm-setup/33-windows-client-install-started.png)
+
+Started the Windows 11 installation process for the client workstation VM. This is the foundation for the endpoint support portion of the lab, where the workstation will later be renamed, configured, and joined to the domain.
+
+## Troubleshooting Example
+
+During the Windows 11 client VM build, the VM initially failed to boot from the installation media and displayed a black screen / boot failure behavior. I documented the issue as a support-style ticket to show realistic troubleshooting instead of hiding the setup problem.
+
+- [Ticket 01 — Windows 11 Client VM Boot Troubleshooting](tickets/01-windows-client-vm-boot-troubleshooting.md)
+
+This ticket demonstrates VM boot troubleshooting, ISO attachment verification, boot order checks, EFI/Secure Boot review, VirtualBox display settings, and documenting the final resolution in a clear support format.
+
 ## Planned Help Desk Scenarios
 
 This project will eventually include ticket writeups for:
@@ -246,7 +291,9 @@ This project is intentionally beginner-friendly and honest. It does not claim se
 
 ## Next Steps
 
-- Create test users and assign group memberships
-- Create a Windows 11 client VM
+- Finish Windows 11 client installation
+- Rename the Windows 11 client VM/workstation
+- Configure client networking and DNS for the lab domain
 - Join the Windows 11 client to `ryanlab.local`
+- Test domain login with the created user accounts
 - Document help desk ticket scenarios
