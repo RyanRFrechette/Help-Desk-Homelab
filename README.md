@@ -285,6 +285,12 @@ Confirmed the Windows 11 client successfully joined the `ryanlab.local` domain a
 
 Confirmed the Windows 11 client can log in with a standard domain test user account, `RYANLAB\j.smith`. The `whoami` output proves the workstation accepts normal Active Directory user logins, not just domain administrator access.
 
+### 37. Password Reset Success - Jane Smith
+
+![Password reset success for Jane Smith](screenshots/active-directory/37-password-reset-success-jane-smith.png)
+
+Reset the password for the standard domain user account Jane Smith in Active Directory Users and Computers. This demonstrates a common help desk workflow: assisting a user who cannot sign in by resetting an Active Directory password and confirming the action completed successfully.
+
 ## Troubleshooting Example
 
 During the Windows 11 client VM build, the VM initially failed to boot from the installation media and displayed a black screen / boot failure behavior. I documented the issue as a support-style ticket to show realistic troubleshooting instead of hiding the setup problem.
@@ -315,3 +321,4 @@ This project is intentionally beginner-friendly and honest. It does not claim se
 - Join the Windows 11 client to `ryanlab.local`
 - Test domain login with the created user accounts
 - Document help desk ticket scenarios
+
