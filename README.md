@@ -279,6 +279,12 @@ Confirmed the Windows 11 client workstation successfully reached the desktop aft
 
 Confirmed the Windows 11 client successfully joined the `ryanlab.local` domain and logged in as `RYANLAB\Administrator`. The `whoami` output proves the workstation is using a domain account instead of only a local Windows account.
 
+### 36. Domain User Login Proof
+
+![Domain user login proof](screenshots/active-directory/36-domain-user-login-proof.png)
+
+Confirmed the Windows 11 client can log in with a standard domain test user account, `RYANLAB\j.smith`. The `whoami` output proves the workstation accepts normal Active Directory user logins, not just domain administrator access.
+
 ## Troubleshooting Example
 
 During the Windows 11 client VM build, the VM initially failed to boot from the installation media and displayed a black screen / boot failure behavior. I documented the issue as a support-style ticket to show realistic troubleshooting instead of hiding the setup problem.
