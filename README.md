@@ -273,6 +273,12 @@ Started the Windows 11 installation process for the client workstation VM. This 
 
 Confirmed the Windows 11 client workstation successfully reached the desktop after installation. This proves the endpoint build is ready for the next help desk tasks: workstation naming, network/DNS configuration, domain join, domain user login testing, and support-ticket demonstrations.
 
+### 35. Domain Administrator Login Proof
+
+![Domain administrator login proof](screenshots/active-directory/35-domain-admin-login-proof.png)
+
+Confirmed the Windows 11 client successfully joined the `ryanlab.local` domain and logged in as `RYANLAB\Administrator`. The `whoami` output proves the workstation is using a domain account instead of only a local Windows account.
+
 ## Troubleshooting Example
 
 During the Windows 11 client VM build, the VM initially failed to boot from the installation media and displayed a black screen / boot failure behavior. I documented the issue as a support-style ticket to show realistic troubleshooting instead of hiding the setup problem.
