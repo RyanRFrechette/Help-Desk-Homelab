@@ -291,6 +291,12 @@ Confirmed the Windows 11 client can log in with a standard domain test user acco
 
 Reset the password for the standard domain user account Jane Smith in Active Directory Users and Computers. This demonstrates a common help desk workflow: assisting a user who cannot sign in by resetting an Active Directory password and confirming the action completed successfully.
 
+### 38. Account Disabled - Alex Turner
+
+![Account disabled for Alex Turner](screenshots/active-directory/38-account-disabled-alex-turner.png)
+
+Disabled the standard domain user account Alex Turner in Active Directory Users and Computers. This demonstrates a common help desk and account lifecycle workflow: securing or offboarding a user account by disabling access while preserving the account record for auditing and future review.
+
 ## Troubleshooting Example
 
 During the Windows 11 client VM build, the VM initially failed to boot from the installation media and displayed a black screen / boot failure behavior. I documented the issue as a support-style ticket to show realistic troubleshooting instead of hiding the setup problem.
@@ -321,4 +327,5 @@ This project is intentionally beginner-friendly and honest. It does not claim se
 - Join the Windows 11 client to `ryanlab.local`
 - Test domain login with the created user accounts
 - Document help desk ticket scenarios
+
 
