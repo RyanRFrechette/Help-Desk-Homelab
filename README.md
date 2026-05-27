@@ -327,6 +327,11 @@ Mapped the Sales shared folder to drive letter Z: on the Windows 11 client while
 
 Created and applied a Group Policy Object that prevents standard domain users from opening Control Panel and PC Settings. This demonstrates a basic Windows administration workflow: creating a GPO, linking it to the correct user OU, forcing a policy update on the Windows 11 client, and verifying the restriction applied successfully for the domain user Jane Smith.
 
+## Project Documents
+
+- [Case Study](case-study.md)
+- [Resume Bullets](resume-bullets.md)
+
 ## Help Desk Ticket Writeups
 
 - [Ticket 01 - Windows 11 Client VM Boot Troubleshooting](tickets/01-windows-client-vm-boot-troubleshooting.md)
@@ -356,8 +361,6 @@ Possible future additions:
 - Printer or shared resource troubleshooting scenario
 - Windows performance triage scenario
 - Simple network diagram
-- Polished case study page
-- Resume-ready project bullets
 
 ## Portfolio Value
 
@@ -365,5 +368,6 @@ This project is intentionally beginner-friendly and honest. It does not claim se
 
 ## Current Status
 
-Core help desk homelab proof is complete. The next step is polishing the case study and resume bullets so this project can support remote help desk / IT support applications.
+Core help desk homelab proof is complete. The README, case study, resume bullets, screenshots, and ticket writeups are polished and ready to support remote help desk / IT support applications.
+
 
