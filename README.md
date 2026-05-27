@@ -329,6 +329,13 @@ During the Windows 11 client VM build, the VM initially failed to boot from the 
 
 This ticket demonstrates VM boot troubleshooting, ISO attachment verification, boot order checks, EFI/Secure Boot review, VirtualBox display settings, and documenting the final resolution in a clear support format.
 
+## Help Desk Ticket Writeups
+
+- [Ticket 02 - Password Reset - Jane Smith](tickets/02-password-reset-jane-smith.md)
+- [Ticket 03 - Account Disable / Re-enable - Alex Turner](tickets/03-account-disable-enable-alex-turner.md)
+- [Ticket 04 - Group Membership Access Change - Alex Turner](tickets/04-group-membership-access-change-alex-turner.md)
+- [Ticket 05 - Shared Folder Access Denied - Sales Share](tickets/05-shared-folder-access-denied-sales.md)
+
 ## Planned Help Desk Scenarios
 
 This project will eventually include ticket writeups for:
@@ -351,6 +358,8 @@ This project is intentionally beginner-friendly and honest. It does not claim se
 - Join the Windows 11 client to `ryanlab.local`
 - Test domain login with the created user accounts
 - Document help desk ticket scenarios
+
+
 
 
 
