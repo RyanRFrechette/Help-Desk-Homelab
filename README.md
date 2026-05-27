@@ -309,6 +309,12 @@ Re-enabled the standard domain user account Alex Turner in Active Directory User
 
 Added the standard domain user account Alex Turner to the Sales-Shared security group in Active Directory Users and Computers. This demonstrates a common help desk access-management workflow: updating a user's group membership so they can receive the correct department or shared-resource access while documenting the successful change.
 
+### 41. Sales Shared Folder Access - Jane Smith
+
+![Sales shared folder access success](screenshots/active-directory/41-sales-shared-folder-access-success.png)
+
+Confirmed the standard domain user Jane Smith could access the Sales shared folder from the Windows 11 client after being added to the Sales-Shared security group. This demonstrates a common help desk permissions workflow: granting department access through Active Directory group membership, refreshing the user session, and verifying successful access to a shared resource.
+
 ## Troubleshooting Example
 
 During the Windows 11 client VM build, the VM initially failed to boot from the installation media and displayed a black screen / boot failure behavior. I documented the issue as a support-style ticket to show realistic troubleshooting instead of hiding the setup problem.
@@ -339,6 +345,7 @@ This project is intentionally beginner-friendly and honest. It does not claim se
 - Join the Windows 11 client to `ryanlab.local`
 - Test domain login with the created user accounts
 - Document help desk ticket scenarios
+
 
 
 
