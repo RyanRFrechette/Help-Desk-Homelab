@@ -327,52 +327,43 @@ Mapped the Sales shared folder to drive letter Z: on the Windows 11 client while
 
 Created and applied a Group Policy Object that prevents standard domain users from opening Control Panel and PC Settings. This demonstrates a basic Windows administration workflow: creating a GPO, linking it to the correct user OU, forcing a policy update on the Windows 11 client, and verifying the restriction applied successfully for the domain user Jane Smith.
 
-## Troubleshooting Example
-
-During the Windows 11 client VM build, the VM initially failed to boot from the installation media and displayed a black screen / boot failure behavior. I documented the issue as a support-style ticket to show realistic troubleshooting instead of hiding the setup problem.
-
-- [Ticket 01 — Windows 11 Client VM Boot Troubleshooting](tickets/01-windows-client-vm-boot-troubleshooting.md)
-
-This ticket demonstrates VM boot troubleshooting, ISO attachment verification, boot order checks, EFI/Secure Boot review, VirtualBox display settings, and documenting the final resolution in a clear support format.
-
 ## Help Desk Ticket Writeups
 
+- [Ticket 01 - Windows 11 Client VM Boot Troubleshooting](tickets/01-windows-client-vm-boot-troubleshooting.md)
 - [Ticket 02 - Password Reset - Jane Smith](tickets/02-password-reset-jane-smith.md)
 - [Ticket 03 - Account Disable / Re-enable - Alex Turner](tickets/03-account-disable-enable-alex-turner.md)
 - [Ticket 04 - Group Membership Access Change - Alex Turner](tickets/04-group-membership-access-change-alex-turner.md)
 - [Ticket 05 - Shared Folder Access Denied - Sales Share](tickets/05-shared-folder-access-denied-sales.md)
 - [Ticket 06 - Control Panel Restricted by Group Policy](tickets/06-group-policy-control-panel-restriction.md)
 
-## Planned Help Desk Scenarios
+## Completed Help Desk Scenarios
 
-This project will eventually include ticket writeups for:
+This project now includes documented proof for:
 
-- User cannot log in — password reset workflow
-- Disabled account — account re-enable workflow
-- New employee setup — create user and assign group access
-- Shared folder access denied — permissions/group troubleshooting
-- Client cannot reach domain — basic network/DNS troubleshooting
-- Slow Windows computer — basic support triage
+- Windows 11 client VM boot troubleshooting
+- Active Directory password reset workflow
+- Disabled account and account re-enable workflow
+- Group membership / access change workflow
+- Shared folder access denied troubleshooting
+- Mapped network drive setup
+- Basic Group Policy restriction and verification
+
+## Future Optional Enhancements
+
+Possible future additions:
+
+- Basic DNS troubleshooting scenario
+- Printer or shared resource troubleshooting scenario
+- Windows performance triage scenario
+- Simple network diagram
+- Polished case study page
+- Resume-ready project bullets
 
 ## Portfolio Value
 
-This project is intentionally beginner-friendly and honest. It does not claim senior-level administration experience. It demonstrates practical support habits: lab setup, documentation, screenshots, troubleshooting notes, and structured communication.
+This project is intentionally beginner-friendly and honest. It does not claim senior-level administration experience. It demonstrates practical support habits: lab setup, documentation, screenshots, troubleshooting notes, Active Directory basics, shared resource troubleshooting, mapped drive setup, Group Policy testing, and structured support-ticket communication.
 
-## Next Steps
+## Current Status
 
-- Rename the Windows 11 client VM/workstation
-- Configure client networking and DNS for the lab domain
-- Join the Windows 11 client to `ryanlab.local`
-- Test domain login with the created user accounts
-- Document help desk ticket scenarios
-
-
-
-
-
-
-
-
-
-
+Core help desk homelab proof is complete. The next step is polishing the case study and resume bullets so this project can support remote help desk / IT support applications.
 
