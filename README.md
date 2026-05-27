@@ -341,6 +341,7 @@ This ticket demonstrates VM boot troubleshooting, ISO attachment verification, b
 - [Ticket 03 - Account Disable / Re-enable - Alex Turner](tickets/03-account-disable-enable-alex-turner.md)
 - [Ticket 04 - Group Membership Access Change - Alex Turner](tickets/04-group-membership-access-change-alex-turner.md)
 - [Ticket 05 - Shared Folder Access Denied - Sales Share](tickets/05-shared-folder-access-denied-sales.md)
+- [Ticket 06 - Control Panel Restricted by Group Policy](tickets/06-group-policy-control-panel-restriction.md)
 
 ## Planned Help Desk Scenarios
 
@@ -364,6 +365,7 @@ This project is intentionally beginner-friendly and honest. It does not claim se
 - Join the Windows 11 client to `ryanlab.local`
 - Test domain login with the created user accounts
 - Document help desk ticket scenarios
+
 
 
 
