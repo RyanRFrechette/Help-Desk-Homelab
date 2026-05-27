@@ -303,6 +303,12 @@ Disabled the standard domain user account Alex Turner in Active Directory Users 
 
 Re-enabled the standard domain user account Alex Turner in Active Directory Users and Computers after the account-disable test. This demonstrates a common help desk account lifecycle workflow: restoring user access after an account was disabled while confirming the change completed successfully in Active Directory.
 
+### 40. Group Membership Added - Alex Turner
+
+![Group membership added for Alex Turner](screenshots/active-directory/40-group-membership-add-success-alex-turner-sales-shared.png)
+
+Added the standard domain user account Alex Turner to the Sales-Shared security group in Active Directory Users and Computers. This demonstrates a common help desk access-management workflow: updating a user's group membership so they can receive the correct department or shared-resource access while documenting the successful change.
+
 ## Troubleshooting Example
 
 During the Windows 11 client VM build, the VM initially failed to boot from the installation media and displayed a black screen / boot failure behavior. I documented the issue as a support-style ticket to show realistic troubleshooting instead of hiding the setup problem.
@@ -333,6 +339,7 @@ This project is intentionally beginner-friendly and honest. It does not claim se
 - Join the Windows 11 client to `ryanlab.local`
 - Test domain login with the created user accounts
 - Document help desk ticket scenarios
+
 
 
 
