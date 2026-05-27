@@ -321,6 +321,12 @@ Confirmed the standard domain user Jane Smith could access the Sales shared fold
 
 Mapped the Sales shared folder to drive letter Z: on the Windows 11 client while logged in as the standard domain user Jane Smith. This demonstrates a common help desk workflow: connecting a user to a department network drive, verifying the mapped drive path, and confirming the user can access the shared file successfully.
 
+### 43. Group Policy Control Panel Restriction - Jane Smith
+
+![Group Policy Control Panel restriction success](screenshots/active-directory/43-gpo-control-panel-restriction-success.png)
+
+Created and applied a Group Policy Object that prevents standard domain users from opening Control Panel and PC Settings. This demonstrates a basic Windows administration workflow: creating a GPO, linking it to the correct user OU, forcing a policy update on the Windows 11 client, and verifying the restriction applied successfully for the domain user Jane Smith.
+
 ## Troubleshooting Example
 
 During the Windows 11 client VM build, the VM initially failed to boot from the installation media and displayed a black screen / boot failure behavior. I documented the issue as a support-style ticket to show realistic troubleshooting instead of hiding the setup problem.
@@ -358,6 +364,7 @@ This project is intentionally beginner-friendly and honest. It does not claim se
 - Join the Windows 11 client to `ryanlab.local`
 - Test domain login with the created user accounts
 - Document help desk ticket scenarios
+
 
 
 
