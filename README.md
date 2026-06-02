@@ -1,5 +1,11 @@
 # Help Desk Homelab
 
+## Recruiter TL;DR
+
+Practical Windows help desk portfolio lab built with VirtualBox, Windows Server 2022, and Windows 11. Covers Active Directory setup, domain join, password resets, account enable/disable, group membership changes, shared folder access, mapped drives, and Group Policy restriction — all documented with screenshots and ticket writeups. Intentionally entry-level and honest.
+
+---
+
 A practical Windows help desk portfolio project documenting virtual machine setup, Windows Server preparation, Active Directory Domain Services configuration, and ticket-style troubleshooting workflows.
 
 This project is designed for remote help desk, IT support, and technical support roles. It shows that I can follow a structured lab process, document my work clearly, organize screenshots, troubleshoot setup issues, and explain beginner Windows support tasks in a professional way.
@@ -18,8 +24,6 @@ Hiring managers do not need a giant advanced cloud project to evaluate entry-lev
 - Explain what I did, what went wrong, how I fixed it, and why it matters
 
 ## Lab Environment
-
-Planned lab setup:
 
 - Host machine: Windows PC
 - Virtualization: Oracle VirtualBox
